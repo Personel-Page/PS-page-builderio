@@ -4,17 +4,17 @@ const projects = [
   {
     title: "Data Structures in C++",
     desc: "Implementations and visualizations of fundamental data structures and algorithms.",
-    image: "/public/images/project-1.svg",
+    image: "/images/project-1.svg",
   },
   {
     title: "Web Portfolio using HTML/CSS/JS",
     desc: "A responsive personal website with animations and clean design.",
-    image: "/public/images/project-2.svg",
+    image: "/images/project-2.svg",
   },
   {
     title: "Flutter Mobile App",
     desc: "A sample cross-platform mobile app showcasing UI and navigation.",
-    image: "/public/images/project-3.svg",
+    image: "/images/project-3.svg",
   },
 ];
 
