@@ -9,10 +9,15 @@ export default function About() {
           </div>
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
-              I'm a 3rd-year Computer Science student at HCMUT with strong interests in software development, algorithms, and AI/ML. I enjoy turning ideas into real applications and constantly improving my problem-solving skills.
+              I'm a 3rd-year Computer Science student at HCMUT with strong
+              interests in software development, algorithms, and AI/ML. I enjoy
+              turning ideas into real applications and constantly improving my
+              problem-solving skills.
             </p>
             <p>
-              Beyond academics, I explore new technologies, contribute to personal projects, and learn best practices to write clean, maintainable code.
+              Beyond academics, I explore new technologies, contribute to
+              personal projects, and learn best practices to write clean,
+              maintainable code.
             </p>
           </div>
         </div>

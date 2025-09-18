@@ -18,7 +18,8 @@ export default function Hero() {
               <span className="gradient-text">Trần Phước Sang</span>
             </h1>
             <p className="max-w-prose text-base leading-7 text-muted-foreground sm:text-lg">
-              Passionate about coding, exploring technologies, and building meaningful projects.
+              Passionate about coding, exploring technologies, and building
+              meaningful projects.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">

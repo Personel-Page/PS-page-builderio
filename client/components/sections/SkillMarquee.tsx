@@ -13,7 +13,11 @@ interface SkillMarqueeProps {
   speedMs?: number;
 }
 
-export default function SkillMarquee({ skills, reverse, speedMs = 30000 }: SkillMarqueeProps) {
+export default function SkillMarquee({
+  skills,
+  reverse,
+  speedMs = 30000,
+}: SkillMarqueeProps) {
   // duplicate items to create an infinite loop
   const items = [...skills, ...skills];
   return (

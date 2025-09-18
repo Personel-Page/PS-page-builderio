@@ -10,16 +10,40 @@ export default function Contact() {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold tracking-tight">Contact</h2>
-            <p className="mt-2 text-muted-foreground">Let's build something together</p>
+            <p className="mt-2 text-muted-foreground">
+              Let's build something together
+            </p>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
               <p>
-                GitHub: <a className="text-primary hover:underline" href="https://github.com/" target="_blank" rel="noreferrer">github.com/</a>
+                GitHub:{" "}
+                <a
+                  className="text-primary hover:underline"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/
+                </a>
               </p>
               <p>
-                LinkedIn: <a className="text-primary hover:underline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/</a>
+                LinkedIn:{" "}
+                <a
+                  className="text-primary hover:underline"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/
+                </a>
               </p>
               <p>
-                Email: <a className="text-primary hover:underline" href="mailto:tranphuocsang@example.com">tranphuocsang@example.com</a>
+                Email:{" "}
+                <a
+                  className="text-primary hover:underline"
+                  href="mailto:tranphuocsang@example.com"
+                >
+                  tranphuocsang@example.com
+                </a>
               </p>
             </div>
           </div>
@@ -32,7 +56,9 @@ export default function Contact() {
               const name = data.get("name");
               const email = data.get("email");
               const message = data.get("message");
-              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+              const body = encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\n\n${message}`,
+              );
               window.location.href = `mailto:tranphuocsang@example.com?subject=Portfolio%20Contact&body=${body}`;
             }}
           >
@@ -43,13 +69,27 @@ export default function Contact() {
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" name="email" type="email" required placeholder="you@example.com" />
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                />
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" name="message" required placeholder="Tell me about your project..." rows={5} />
+                <Textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell me about your project..."
+                  rows={5}
+                />
               </div>
-              <Button type="submit" className="justify-self-start">Send Message</Button>
+              <Button type="submit" className="justify-self-start">
+                Send Message
+              </Button>
             </div>
           </form>
         </div>

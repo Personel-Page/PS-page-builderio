@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const projects = [
   {
@@ -30,9 +36,16 @@ export default function Projects() {
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
-            <Card key={p.title} className="group overflow-hidden transition hover:shadow-lg">
+            <Card
+              key={p.title}
+              className="group overflow-hidden transition hover:shadow-lg"
+            >
               <div className="aspect-video overflow-hidden">
-                <img src={p.image} alt={p.title} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                />
               </div>
               <CardHeader>
                 <CardTitle>{p.title}</CardTitle>
