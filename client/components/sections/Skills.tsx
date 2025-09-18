@@ -1,15 +1,18 @@
-import { Badge } from "@/components/ui/badge";
+import SkillMarquee, { type Skill } from "@/components/sections/SkillMarquee";
 
-const skills = [
-  "C++",
-  "Python",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Java",
-  "Flutter",
-  "Git",
-  "React (basics)",
+const row1: Skill[] = [
+  { name: "C++", icon: "/icons/cplusplus.svg", colorFrom: "from-indigo-500", colorTo: "to-sky-500" },
+  { name: "Python", icon: "/icons/python.svg", colorFrom: "from-sky-500", colorTo: "to-yellow-400" },
+  { name: "HTML", icon: "/icons/html5.svg", colorFrom: "from-orange-500", colorTo: "to-rose-500" },
+  { name: "CSS", icon: "/icons/css3.svg", colorFrom: "from-sky-600", colorTo: "to-indigo-500" },
+  { name: "JavaScript", icon: "/icons/javascript.svg", colorFrom: "from-yellow-400", colorTo: "to-amber-500" },
+];
+
+const row2: Skill[] = [
+  { name: "Java", icon: "/icons/java.svg", colorFrom: "from-red-500", colorTo: "to-rose-500" },
+  { name: "Flutter", icon: "/icons/flutter.svg", colorFrom: "from-sky-500", colorTo: "to-cyan-500" },
+  { name: "Git", icon: "/icons/git.svg", colorFrom: "from-orange-500", colorTo: "to-red-500" },
+  { name: "React", icon: "/icons/react.svg", colorFrom: "from-cyan-500", colorTo: "to-indigo-500" },
 ];
 
 export default function Skills() {
@@ -18,15 +21,10 @@ export default function Skills() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
         <p className="mt-2 text-muted-foreground">Languages & technologies</p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          {skills.map((skill) => (
-            <Badge
-              key={skill}
-              className="bg-gradient-to-r from-indigo-500 via-sky-500 to-purple-500 text-white shadow hover:brightness-110 transition"
-            >
-              {skill}
-            </Badge>
-          ))}
+
+        <div className="mt-8 space-y-4">
+          <SkillMarquee skills={[...row1, ...row2]} speedMs={28000} />
+          <SkillMarquee skills={[...row2, ...row1]} reverse speedMs={34000} />
         </div>
       </div>
     </section>
