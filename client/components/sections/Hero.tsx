@@ -31,7 +31,7 @@ export default function Hero() {
           </div>
           <div className="relative mx-auto aspect-square w-64 overflow-hidden rounded-2xl border shadow-xl md:w-80">
             <img
-              src="/public/images/profile-placeholder.svg"
+              src="/images/profile-placeholder.svg"
               alt="Profile placeholder"
               className="h-full w-full object-cover"
             />
