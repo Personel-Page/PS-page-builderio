@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
       allow: [".","./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
+    base: '/PS-page-builderio.github.io/',
   },
   build: {
     outDir: "dist/spa",
