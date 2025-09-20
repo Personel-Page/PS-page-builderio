@@ -6,21 +6,23 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+
 const projects = [
   {
     title: "Data Structures in C++",
     desc: "Implementations and visualizations of fundamental data structures and algorithms.",
-    image: "/images/project-1.svg",
+    image: `${BASE_PATH}/images/project-1.svg`,
   },
   {
     title: "Web Portfolio using HTML/CSS/JS",
     desc: "A responsive personal website with animations and clean design.",
-    image: "/images/project-2.svg",
+    image: `${BASE_PATH}/images/project-2.svg`,
   },
   {
     title: "Flutter Mobile App",
     desc: "A sample cross-platform mobile app showcasing UI and navigation.",
-    image: "/images/project-3.svg",
+    image: `${BASE_PATH}/images/project-3.svg`,
   },
 ];
 

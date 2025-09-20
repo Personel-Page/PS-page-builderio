@@ -1,33 +1,35 @@
 import SkillMarquee, { type Skill } from "@/components/sections/SkillMarquee";
 
+const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+
 const row1: Skill[] = [
   {
     name: "C++",
-    icon: "/icons/cplusplus.svg",
+    icon: `${BASE_PATH}/icons/cplusplus.svg`,
     colorFrom: "from-indigo-500",
     colorTo: "to-sky-500",
   },
   {
     name: "Python",
-    icon: "/icons/python.svg",
+    icon: `${BASE_PATH}/icons/python.svg`,
     colorFrom: "from-sky-500",
     colorTo: "to-yellow-400",
   },
   {
     name: "HTML",
-    icon: "/icons/html5.svg",
+    icon: `${BASE_PATH}/icons/html5.svg`,
     colorFrom: "from-orange-500",
     colorTo: "to-rose-500",
   },
   {
     name: "CSS",
-    icon: "/icons/css3.svg",
+    icon: `${BASE_PATH}/icons/css3.svg`,
     colorFrom: "from-sky-600",
     colorTo: "to-indigo-500",
   },
   {
     name: "JavaScript",
-    icon: "/icons/javascript.svg",
+    icon: `${BASE_PATH}/icons/javascript.svg`,
     colorFrom: "from-yellow-400",
     colorTo: "to-amber-500",
   },
@@ -36,25 +38,25 @@ const row1: Skill[] = [
 const row2: Skill[] = [
   {
     name: "Java",
-    icon: "/icons/java.svg",
+    icon: `${BASE_PATH}/icons/java.svg`,
     colorFrom: "from-red-500",
     colorTo: "to-rose-500",
   },
   {
     name: "Flutter",
-    icon: "/icons/flutter.svg",
+    icon: `${BASE_PATH}/icons/flutter.svg`,
     colorFrom: "from-sky-500",
     colorTo: "to-cyan-500",
   },
   {
     name: "Git",
-    icon: "/icons/git.svg",
+    icon: `${BASE_PATH}/icons/git.svg`,
     colorFrom: "from-orange-500",
     colorTo: "to-red-500",
   },
   {
     name: "React",
-    icon: "/icons/react.svg",
+    icon: `${BASE_PATH}/icons/react.svg`,
     colorFrom: "from-cyan-500",
     colorTo: "to-indigo-500",
   },

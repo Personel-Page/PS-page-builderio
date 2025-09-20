@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 
+const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-32">
@@ -32,7 +34,7 @@ export default function Hero() {
           </div>
           <div className="relative mx-auto aspect-square w-64 overflow-hidden rounded-2xl border shadow-xl md:w-80">
             <img
-              src="/images/profile-placeholder.svg"
+              src={`${BASE_PATH}/images/profile-placeholder.svg`}
               alt="Profile placeholder"
               className="h-full w-full object-cover"
             />
