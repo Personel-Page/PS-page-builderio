@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
-  base: '/PS-page-builderio.github.io/',
+  base: '/PS-page-builderio/',
   build: {
     outDir: "dist/spa",
   },
