@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+const BASE_PATH = import.meta.env.BASE_URL || "";
 
 export default function Hero() {
   return (

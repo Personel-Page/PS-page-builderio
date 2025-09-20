@@ -1,6 +1,6 @@
 import SkillMarquee, { type Skill } from "@/components/sections/SkillMarquee";
 
-const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+const BASE_PATH = import.meta.env.BASE_URL || "";
 
 const row1: Skill[] = [
   {

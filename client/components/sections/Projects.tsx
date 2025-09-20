@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const BASE_PATH = import.meta.env.VITE_BASE_PATH || "";
+const BASE_PATH = import.meta.env.BASE_URL || "";
 
 const projects = [
   {
